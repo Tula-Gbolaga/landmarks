@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  console.log("sample commit to test git");
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
