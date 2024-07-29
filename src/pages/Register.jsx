@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button, Input } from "../components";
 
 const Register = () => {
@@ -10,7 +11,10 @@ const Register = () => {
           </h2>
           <h3 className="text-center">
             Already have an account?
-            <span className="text-blue-500"> Login </span>
+            <Link to="/login" className="text-blue-500">
+              {" "}
+              Login{" "}
+            </Link>
           </h3>
           <form>
             <Input

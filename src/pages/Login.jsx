@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button, Input } from "../components";
 
 const Login = () => {
@@ -10,7 +11,9 @@ const Login = () => {
           </h2>
           <h3 className="text-center">
             Don't have an account?
-            <span className="text-blue-500"> Create Account</span>
+            <Link to="/register" className="text-blue-500">
+              Create Account
+            </Link>
           </h3>
           <form>
             <Input label={"Email"} type="email" placeholder={"Enter Email"} />
